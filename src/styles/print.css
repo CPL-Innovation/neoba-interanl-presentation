@@ -1,0 +1,76 @@
+@media print {
+  /* Force all scroll-triggered animations to final state */
+  [data-scroll-reveal],
+  .motion-div {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Remove fixed/sticky UI elements */
+  .export-controls,
+  .skip-link {
+    display: none !important;
+  }
+
+  /* Sections on new pages */
+  .section {
+    page-break-before: always;
+    page-break-inside: avoid;
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  /* First section (Hero) shouldn't break before */
+  .section:first-child {
+    page-break-before: auto;
+  }
+
+  /* Full page width for print */
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  /* Preserve colors */
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Body typography for print */
+  body {
+    font-size: 11pt;
+  }
+
+  /* Hide interactive controls */
+  button,
+  [role="button"] {
+    display: none !important;
+  }
+
+  /* Show BeforeAfter in both states for print */
+  [data-before-after-toggle] {
+    display: none !important;
+  }
+
+  [data-before-after-before],
+  [data-before-after-after] {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  /* Video poster as static image */
+  video {
+    display: none;
+  }
+
+  [data-video-poster] {
+    display: flex !important;
+  }
+
+  /* Links show URL */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
