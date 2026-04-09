@@ -231,7 +231,7 @@ export const content = {
   thursdayCrew: {
     heading: 'The Thursday Crew',
     subtitle:
-      'The floor case \u2014 the realistic Tuesday afternoon',
+      'The floor case \u2014 the realistic Thursday afternoon',
     image: '/images/thursday-crew.jpg',
     imageAlt: 'The Thursday Crew — four Studio 525 teens at the mixing console',
     detail: '4 Studio 525 teens',

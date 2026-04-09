@@ -197,9 +197,18 @@ export default function ArchiveDiscovery() {
               style={{
                 fontFamily: 'var(--font-sans)',
                 fontSize: 'var(--text-sm)',
-                color: 'var(--color-blue-mid)',
+                color: '#fff',
+                background: 'var(--color-blue-mid)',
                 textDecoration: 'none',
+                padding: '0.625rem 1.25rem',
+                borderRadius: '6px',
+                display: 'inline-block',
+                fontWeight: 600,
+                letterSpacing: '0.01em',
+                transition: 'opacity 0.2s',
               }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.85')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               {dashboardLabel}
             </a>
