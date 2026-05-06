@@ -5,12 +5,14 @@ import './styles/global.css'
 import './styles/print.css'
 import App from './App.tsx'
 import UserTesting from './pages/user-testing/UserTesting.tsx'
+import IndexPage from './pages/IndexPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/presentation" element={<App />} />
         <Route path="/user-testing" element={<UserTesting />} />
       </Routes>
     </BrowserRouter>
