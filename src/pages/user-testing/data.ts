@@ -185,6 +185,11 @@ export const utContent = {
     bigNumber: "5 of 7",
     bigNumberCaption:
       "standout clips sit in Civic Headaches — the hardest tier in the curation.",
+    eraQuote: {
+      text: "ERA — and what was the actual outcome?",
+      attribution: "User 1, 65+",
+      context: "Watching the footage made her want to know the outcome, not the history.",
+    },
     quotes: [
       {
         text: "I thought Civic Headaches was still relevant.",

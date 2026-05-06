@@ -2,7 +2,7 @@ import { ScrollReveal } from '../../../components/ScrollReveal'
 import { utContent } from '../data'
 
 export default function SlideFinding3() {
-  const { heading, headline, standouts, bigNumber, bigNumberCaption, quotes, implication } =
+  const { heading, headline, standouts, bigNumber, bigNumberCaption, eraQuote, quotes, implication } =
     utContent.finding3
 
   return (
@@ -51,6 +51,18 @@ export default function SlideFinding3() {
           <div className="ut-callout ut-callout--stat">
             <div className="ut-big-number">{bigNumber}</div>
             <div className="ut-big-caption">{bigNumberCaption}</div>
+          </div>
+        </ScrollReveal>
+
+        {/* ERA quote (moved from Finding 2) */}
+        <ScrollReveal>
+          <div className="ut-quote">
+            <p>"{eraQuote.text}"</p>
+            <cite>
+              — {eraQuote.attribution}
+              <br />
+              <span style={{ fontStyle: 'italic' }}>{eraQuote.context}</span>
+            </cite>
           </div>
         </ScrollReveal>
 
