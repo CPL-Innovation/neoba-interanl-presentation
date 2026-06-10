@@ -64,14 +64,6 @@ export default function IndexPage() {
         }}>
           NEOBA Project
         </h1>
-        <p style={{
-          fontFamily: "'Spectral', Georgia, serif",
-          fontSize: '1.125rem',
-          color: '#7A7067',
-          marginTop: '0.75rem',
-        }}>
-          Cleveland Digital Public Library — Exhibit Development
-        </p>
       </div>
 
       {/* Cards */}
