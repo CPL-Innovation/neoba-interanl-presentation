@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Large local media — kept out of git history (served locally / via other hosting)
+public/assets/video/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

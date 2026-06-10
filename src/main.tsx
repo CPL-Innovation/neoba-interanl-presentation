@@ -6,6 +6,8 @@ import './styles/print.css'
 import App from './App.tsx'
 import UserTesting from './pages/user-testing/UserTesting.tsx'
 import IndexPage from './pages/IndexPage.tsx'
+import WorkedExamples from './pages/worked-examples/WorkedExamples.tsx'
+import StationPage from './pages/worked-examples/StationPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +16,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<IndexPage />} />
         <Route path="/presentation" element={<App />} />
         <Route path="/user-testing" element={<UserTesting />} />
+        <Route path="/worked-examples" element={<WorkedExamples />} />
+        <Route path="/worked-examples/:stationId" element={<StationPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

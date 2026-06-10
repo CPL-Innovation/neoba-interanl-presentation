@@ -19,6 +19,15 @@ const cards = [
     textColor: '#1a1a1a',
     tagColor: '#4298B5',
   },
+  {
+    to: '/worked-examples',
+    label: 'Worked Examples Mockup',
+    description: 'Eight archival clips, eight short interactions. Functional mockup site for the next round of user testing.',
+    accent: '#c9a14a',
+    bg: '#131316',
+    textColor: '#ece6da',
+    tagColor: '#c9a14a',
+  },
 ]
 
 export default function IndexPage() {
